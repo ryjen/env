@@ -3,19 +3,19 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/ryjen/env)](https://goreportcard.com/report/github.com/ryjen/env)
 [![Coverage Status](https://coveralls.io/repos/github/ryjen/env/badge.png?branch=master)](https://coveralls.io/github/ryjen/env?branch=master)
 
-# env/context
+# env-context
 
 a context aware environment library. 
 
 ## env
 
-the environment is the variables defined by the OS as a file or in a shell.
+the environment is the variables defined by the OS.  Such as in a file or in a shell.
 
 ## context
 
-the context is where those variables are defined.  For example, development or production.
+the context is where environment variables are defined.  For example, *development* or *production*.
 
-a single environment variable determines the context.
+a single environment variable can determine the context.
 
 By default, `ENV_CONTEXT` is used, but can be specified.
 
@@ -25,8 +25,8 @@ the default environment files are (in order of overriding):
 
 1. .env
 2. .env.local 
-3. .env.<context>
-4. .env.<context>.local
+3. .env.context
+4. .env.context.local
 
 ## command
 
